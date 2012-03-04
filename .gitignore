@@ -1,3 +1,11 @@
 # Ignore The following directories / file extensions
 Library
+<<<<<<< HEAD
+Temp
+
+# Ignore the following file extensions
+*.exe
+*.vcproject
+*.sln
+=======
 Temp
