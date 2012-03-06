@@ -22,7 +22,8 @@ public class PlatformScript : MonoBehaviour {
 	private Color[] ActiveColour, DeActiveColour;
 
 	// Use this for initialization
-	void Start () {
+	public void Start () 
+	{
 	
 		
 		setupColours();
