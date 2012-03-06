@@ -51,7 +51,7 @@ public class PlatformScript : MonoBehaviour {
 	// setups the colour arrays to the correct colours
 	void setupColours()
 	{
-		ActiveColour = new Color[7];
+		public	ActiveColour = new Color[7];
 		DeActiveColour = new Color[7];
 		
 		ActiveColour[(int)Colour.RED] = DeActiveColour[(int)Colour.RED] = Color.red;
