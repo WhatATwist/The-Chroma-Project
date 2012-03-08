@@ -23,8 +23,8 @@ public class MovePlatEditor : Editor {
 		{
 			
 			Handles.DrawLine(_target.Nodes[i].transform.position, _target.Nodes[i+1].transform.position); 
+			Handles.DrawLine(_target.Nodes[i].transform.position, _target.Nodes[0].transform.position); 
 		}
-		Handles.DrawLine(_target.Nodes[i].transform.position, _target.Nodes[0].transform.position); 
 		
 		if (GUI.changed)
             EditorUtility.SetDirty (target);
