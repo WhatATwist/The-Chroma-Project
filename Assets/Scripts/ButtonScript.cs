@@ -12,7 +12,8 @@ public class ButtonScript : MonoBehaviour {
 	private Color[] Colours;
 	
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		
 		setupColours();
 		isActive =false;
@@ -20,7 +21,8 @@ public class ButtonScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 		
 		if(isActive)
 		{

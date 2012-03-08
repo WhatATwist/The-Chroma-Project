@@ -19,10 +19,10 @@ public class PlatformScript : MonoBehaviour {
 	
 	// private colour arrays that just hold the colours the platform could be
 	// 2 arrays as the deactive one has a lower alpha value
-	private Color[] ActiveColour, DeActiveColour;
+	public Color[] ActiveColour, DeActiveColour;
 
 	// Use this for initialization
-	void Start () {
+	public void Start () {
 	
 		
 		setupColours();

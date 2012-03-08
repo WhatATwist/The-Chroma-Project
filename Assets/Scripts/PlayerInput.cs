@@ -7,7 +7,7 @@ public class PlayerInput : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-
+		Screen.showCursor = false;
 	}
 	
 	// Update is called once per frame
@@ -28,6 +28,11 @@ public class PlayerInput : MonoBehaviour {
        		else
             	print("I'm looking at nothing!");
 			
+		}
+		
+		if(Input.GetKeyDown(KeyCode.Escape))
+		{
+			Application.LoadLevel(0);
 		}
 	}
 }
