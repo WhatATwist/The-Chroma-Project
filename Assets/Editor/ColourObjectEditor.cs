@@ -16,7 +16,7 @@ public class ColourObjectEditor : Editor {
 	
 	public void OnSceneGUI () 
 	{
-        _target.renderer.material.color = _target.ActiveColour[(int)_target.PlatColour];
+        _target.renderer.sharedMaterial.color = _target.ActiveColour[(int)_target.PlatColour];
 		
         if (GUI.changed)
             EditorUtility.SetDirty (target);

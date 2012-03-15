@@ -4,8 +4,6 @@ using System.Collections.Generic;
 
 public class PlatMoveScriptNode : MonoBehaviour 
 {
-	
-	
 	public GameObject[] Nodes = new GameObject[1];   // Errornous - .Length not valid
 	// The speed.
 	public float Speed = 0.1f;
@@ -14,7 +12,6 @@ public class PlatMoveScriptNode : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-
 		print("nodes array length : ");
 		print(Nodes.Length);
 	}
