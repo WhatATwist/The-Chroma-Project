@@ -25,6 +25,8 @@ public	enum Colour
 	public void Start () {
 	
 		
+	public void Start () 
+	{
 		setupColours();
 	}
 	
