@@ -51,7 +51,7 @@ public	enum Colour
 	// setups the colour arrays to the correct colours
 	void setupColours()
 	{
-		public	ActiveColour = new Color[7];
+		ActiveColour = new Color[7];
 		DeActiveColour = new Color[7];
 		
 		ActiveColour[(int)Colour.RED] = DeActiveColour[(int)Colour.RED] = Color.red;
