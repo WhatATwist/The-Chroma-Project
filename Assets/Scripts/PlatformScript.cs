@@ -29,7 +29,8 @@ public	enum Colour
 	
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 		
 		if(isActive)
 		{
