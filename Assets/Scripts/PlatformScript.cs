@@ -24,14 +24,13 @@ public	enum Colour
 	// Use this for initialization
 	public void Start () 
 	{
-	
-		
 		setupColours();
 	}
 	
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 		
 		if(isActive)
 		{
