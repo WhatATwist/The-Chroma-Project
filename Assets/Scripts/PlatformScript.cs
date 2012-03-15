@@ -22,9 +22,6 @@ public	enum Colour
 	public Color[] ActiveColour, DeActiveColour;
 
 	// Use this for initialization
-	public void Start () {
-	
-		
 	public void Start () 
 	{
 		setupColours();
