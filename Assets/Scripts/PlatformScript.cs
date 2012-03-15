@@ -24,6 +24,11 @@ public	enum Colour
 	// Use this for initialization
 	public void Start () 
 	{
+<<<<<<< HEAD
+=======
+	
+		
+>>>>>>> a8dfb667b43e0a43666646a5387659672d0c4dd7
 		setupColours();
 	}
 	
