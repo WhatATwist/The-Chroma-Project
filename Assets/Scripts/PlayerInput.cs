@@ -7,7 +7,7 @@ public class PlayerInput : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-
+		Screen.showCursor = false;
 	}
 	
 	// Update is called once per frame
@@ -25,9 +25,16 @@ public class PlayerInput : MonoBehaviour {
 				hit.collider.SendMessage("TriggerButton");
 				
 			}
-       		else
-            	print("I'm looking at nothing!");
+       		else if (Debug.isDebugBuild)
+			{
+            	Debug.Log("I'm looking at nothing!");	// only print if in Debug Mode
+			}
 			
+		}
+		
+		if(Input.GetKeyDown(KeyCode.Escape))
+		{
+			Application.LoadLevel(0);
 		}
 	}
 }

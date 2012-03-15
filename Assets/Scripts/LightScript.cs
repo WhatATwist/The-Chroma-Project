@@ -17,12 +17,12 @@ public class LightScript : MonoBehaviour {
 	public PlatformScript.Colour lightColour;
 	
 	// set to private as these will only be setup once by the setupColours function
-	private Color[] Colours;
+	public Color[] Colours;
 	
 	//private PlatformScript receiver;
 
 	// Use this for initialization
-	void Start () {
+	public void Start () {
 		
 		
 		setupColours();
