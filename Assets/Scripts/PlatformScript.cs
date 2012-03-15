@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlatformScript : MonoBehaviour {
 	
-	public	enum Colour
+public	enum Colour
 	{
 		RED,
 		BLUE,
@@ -15,7 +15,7 @@ public class PlatformScript : MonoBehaviour {
 	} 
 	
 	public Colour PlatColour;
-	private bool isActive;
+	public bool isActive;
 	
 	// private colour arrays that just hold the colours the platform could be
 	// 2 arrays as the deactive one has a lower alpha value
@@ -61,16 +61,16 @@ public class PlatformScript : MonoBehaviour {
 		ActiveColour[(int)Colour.PURPLE] = DeActiveColour[(int)Colour.PURPLE] = new Color(1.0f,0.0f,1.0f);
 		ActiveColour[(int)Colour.WHITE] = DeActiveColour[(int)Colour.WHITE] = Color.white;
 		
-		// loop through the deactive colours array and change the alpha value
-		for(int i = 0; i < 6; i++)
+		for(int i = 0; i < 7; i++)
 		{
 			DeActiveColour[i].a = 0.2f;
 		}
 		
 	}
-	
-	// checks to see if the colour 
-	public void UpdateState(Colour colour)
+
+
+// checks to see if the colour 
+public void UpdateState(Colour colour)
 	{
 		// if the colour sent is the same as the colour of the platform make it active
 		if(PlatColour == colour || PlatColour == Colour.WHITE)
@@ -122,3 +122,4 @@ public class PlatformScript : MonoBehaviour {
 		}// end else
 	}
 }
+
