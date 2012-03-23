@@ -20,11 +20,17 @@ public	enum Colour
 	// private colour arrays that just hold the colours the platform could be
 	// 2 arrays as the deactive one has a lower alpha value
 	public Color[] ActiveColour, DeActiveColour;
+	
 
 	// Use this for initialization
 	public void Start () 
 	{
 		setupColours();
+		
+		// Add a rigid body component to each platform (required for colision detection of local light)
+		//gameObject.AddComponent<Rigidbody>();
+		//rigidbody.useGravity = false;
+		//rigidbody.isKinematic = false;
 	}
 	
 	
@@ -73,9 +79,10 @@ public	enum Colour
 public void UpdateState(Colour colour)
 	{
 		// if the colour sent is the same as the colour of the platform make it active
-		if(PlatColour == colour || PlatColour == Colour.WHITE)
+		if((PlatColour == colour)||(PlatColour == Colour.WHITE))
 		{
 			isActive = true;
+			print("doing it" + name);
 		}
 		// otherwise do a switch to see if the platform contains any colour that should be active
 		else

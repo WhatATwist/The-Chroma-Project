@@ -60,9 +60,16 @@ public class LightScript : MonoBehaviour {
 		// create an array of platforms 
 		GameObject[] platforms = GameObject.FindGameObjectsWithTag("Platform");//>();
 		
+		GameObject[] LocalLights = GameObject.FindGameObjectsWithTag("LocalLight");
+		
 		foreach(GameObject platform in platforms)
 		{
 			platform.SendMessage("UpdateState",colour);
+		}
+		
+		foreach(GameObject LocalLight in LocalLights)
+		{
+			LocalLight.SendMessage("OnLightChange",colour);
 		}
 		
 		
