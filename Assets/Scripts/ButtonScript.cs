@@ -6,7 +6,6 @@ public class ButtonScript : MonoBehaviour {
 	
 	
 	public PlatformScript.Colour ButtonColour;
-	public bool isActive;
 	
 	// set to private as these will only be setup once by the setupColours function
 	private Color[] Colours;
@@ -16,7 +15,6 @@ public class ButtonScript : MonoBehaviour {
 	{
 		
 		setupColours();
-		isActive =false;
 	
 	}
 	
@@ -24,10 +22,6 @@ public class ButtonScript : MonoBehaviour {
 	void Update () 
 	{
 		
-		if(isActive)
-		{
-			TriggerButton();
-		}
 	
 	}
 	
@@ -46,7 +40,7 @@ public class ButtonScript : MonoBehaviour {
 		
 	}
 	
-	public void TriggerButton()
+	public void Trigger()
 	{
 		// and send a call to all platforms to makesure their colour is updated
 		// create an array of platforms 
@@ -56,8 +50,6 @@ public class ButtonScript : MonoBehaviour {
 		{
 			mainLight.SendMessage("SetLightColour", ButtonColour);
 		}
-		
-		isActive = false;
-		
+
 	}
 }
