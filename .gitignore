@@ -9,10 +9,9 @@
 *.pidb
 *.userprefs
 =======
-Temp
-=======
 *.vcproject
 *.sln
 =======
 Temp
 Library
+build
