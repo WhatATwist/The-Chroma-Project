@@ -19,19 +19,29 @@ public class EndLevel : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider other)
 	{
-		print("triggered");
 		
-		// if we're not on the last level
-		if(Application.loadedLevel < Application.levelCount - 1)
+		// if a platform object is colliding with the endlevel entity
+		if(other.gameObject.tag == "Platform")
 		{
-			// then load the next one
-			Application.LoadLevel(Application.loadedLevel + 1);
+			// do nothing
 		}
-		// otherwise go back to the main menu (will change later for endgame state
+		// otherwise it may be the player so trigger level code
 		else
 		{
-			Application.LoadLevel(0);
-				
+			print("triggered");
+			
+			// if we're not on the last level
+			if(Application.loadedLevel < Application.levelCount - 1)
+			{
+				// then load the next one
+				Application.LoadLevel(Application.loadedLevel + 1);
+			}
+			// otherwise go back to the main menu (will change later for endgame state
+			else
+			{
+				Application.LoadLevel(0);
+					
+			}
 		}
 	}
 }
