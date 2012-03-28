@@ -15,6 +15,9 @@ public class DeathRestart : MonoBehaviour {
 	
 	
 	void OnTriggerEnter(Collider other)
+	
+	
+	void OnTriggerEnter(Collider collideInfo)
 	{
 		print("You have died lol");
 		
@@ -22,5 +25,7 @@ public class DeathRestart : MonoBehaviour {
 		Application.LoadLevel(Application.loadedLevel);
 				
 		
+		print (collideInfo.name);
+		collideInfo.SendMessage("Respawn");
 	}
 }
