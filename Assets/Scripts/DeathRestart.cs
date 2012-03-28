@@ -14,17 +14,11 @@ public class DeathRestart : MonoBehaviour {
 	}
 	
 	
-	void OnTriggerEnter(Collider other)
 	
 	
 	void OnTriggerEnter(Collider collideInfo)
 	{
 		print("You have died lol");
-		
-		
-		Application.LoadLevel(Application.loadedLevel);
-				
-		
 		print (collideInfo.name);
 		collideInfo.SendMessage("Respawn");
 	}
