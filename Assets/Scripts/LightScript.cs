@@ -3,16 +3,6 @@ using System.Collections;
 
 public class LightScript : MonoBehaviour {
 	
-	//public	enum Colour
-	//{
-	//	RED,
-	//	BLUE,
-	//	YELLOW,
-	//	ORANGE,
-	//	GREEN,
-	//	PURPLE
-	//} 
-	
 	
 	public PlatformScript.Colour lightColour;
 	
@@ -53,6 +43,9 @@ public class LightScript : MonoBehaviour {
 	
 	public void SetLightColour(PlatformScript.Colour colour)
 	{
+		// update the lightcolour enum
+		lightColour = colour;
+		
 		// set the light colour
 		light.color = Colours[(int)colour];
 		
