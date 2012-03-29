@@ -1,4 +1,5 @@
 # Ignore the following file extensions
+*.DS_Store
 *.exe
 *.dll
 *.so
